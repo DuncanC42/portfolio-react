@@ -1,0 +1,18 @@
+[
+  {
+    "start": "2022-01-01",
+    "end": "2022-12-31",
+    "title": "Titre de l'évènement 1",
+    "location": "Lieu de l'évènement 1",
+    "description": "Description de l'évènement 1",
+    "icon": "School"
+  },
+  {
+    "start": "2023-01-01",
+    "end": "2023-12-31",
+    "title": "Titre de l'évènement 2",
+    "location": "Lieu de l'évènement 2",
+    "description": "Description de l'évènement 2",
+    "icon": "Work"
+  }
+]

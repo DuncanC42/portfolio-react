@@ -1,6 +1,5 @@
 import {Container} from "../container/Container.jsx";
 import './Timeline.css';
-import {Typography} from "@mui/material";
 import {
     Timeline,
     TimelineConnector,
@@ -10,42 +9,55 @@ import {
     TimelineOppositeContent,
     TimelineSeparator
 } from '@mui/lab';
-import {School, LocationOn} from "@mui/icons-material";
+import {LocationOn, School, Work} from "@mui/icons-material";
+import events from './events.json';
+
+const iconMap = {
+    School: <School />,
+    Work: <Work />
+};
 
 export const ProjectTimeline = () => {
     return (
         <Container title="Mon Parcours">
-            <Timeline position="alternate">
-                <TimelineItem>
-                    <TimelineOppositeContent
-                        sx={{ m: 'auto 0' }}
-                        align="right"
-                        variant="body1"
-                        color="white"
-                    >
-                        debut - fin
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                        <TimelineConnector/>
-                        <TimelineDot>
-                            <School/>
-                        </TimelineDot>
-                        <TimelineConnector/>
-                    </TimelineSeparator>
-                    <TimelineContent sx={{py: '12px', px: 2}}>
-                        <Container containerId="eventContainerDetails">
-                            <h3>Titre du Projet</h3>
-                            <div className="location">
-                                <LocationOn fontSize="small"/>
-                                <p>Lieu du Projet</p>
-                            </div>
-                            <div className="description">
-                                Description du projet
-                            </div>
-                        </Container>
-                    </TimelineContent>
-                </TimelineItem>
-            </Timeline>
+            <div className="timelineContainer">
+                <div>
+                    <Timeline position="alternate">
+                        {events.map((event, index) => (
+                            <TimelineItem key={index}>
+                                <TimelineOppositeContent
+                                    sx={{ m: 'auto 0' }}
+                                    align="right"
+                                    variant="body1"
+                                    color="white"
+                                >
+                                    {event.start} - {event.end}
+                                </TimelineOppositeContent>
+                                <TimelineSeparator>
+                                    <TimelineConnector />
+                                    <TimelineDot>
+                                        {iconMap[event.icon]}
+                                    </TimelineDot>
+                                    <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent sx={{
+                                    m: 'auto 0',
+                                    py: '12px',
+                                    px: 2,
+                                }}>
+                                    <Container containerId="eventContainerDetails">
+                                        <h3>{event.title}</h3>
+                                        <LocationOn fontSize="medium" />{event.location}
+                                        <div className="description">
+                                            {event.description}
+                                        </div>
+                                    </Container>
+                                </TimelineContent>
+                            </TimelineItem>
+                        ))}
+                    </Timeline>
+                </div>
+            </div>
         </Container>
     );
 }
