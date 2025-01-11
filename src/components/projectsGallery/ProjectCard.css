@@ -1,0 +1,21 @@
+.projectCard{
+    margin-bottom : 2%;
+}
+.projectCard>div{
+    border-radius: 10px;
+}
+
+.projectsTechnologies{
+    margin-top: 5%;
+}
+
+.projectCard button:hover{
+    background-color: #ff3636;
+    color: white;
+}
+
+.projectCard .iconContainer {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
