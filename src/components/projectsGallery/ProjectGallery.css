@@ -1,7 +1,8 @@
 .ProjectGallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px; /* Adjust the gap between cards as needed */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
     padding: 2em;
-    width: 100%;
+    width: auto;
+    justify-content: center;
 }

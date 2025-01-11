@@ -11,6 +11,9 @@ export const ProjectGallery = () => {
                 <ProjectCard></ProjectCard>
                 <ProjectCard></ProjectCard>
                 <ProjectCard></ProjectCard>
+                <ProjectCard></ProjectCard>
+                <ProjectCard></ProjectCard>
+                <ProjectCard></ProjectCard>
             </div>
 
         </Container>

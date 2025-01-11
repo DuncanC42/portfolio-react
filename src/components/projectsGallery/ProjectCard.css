@@ -1,5 +1,6 @@
 .projectCard{
     margin-bottom : 2%;
+    width: fit-content;
 }
 .projectCard>div{
     border-radius: 10px;
