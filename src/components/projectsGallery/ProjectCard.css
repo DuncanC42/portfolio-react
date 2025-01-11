@@ -10,6 +10,10 @@
     margin-top: 5%;
 }
 
+.iconContainer>svg{
+    color: #cfcf29;
+}
+
 .projectCard button:hover{
     background-color: #ff3636;
     color: white;
@@ -19,4 +23,13 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+}
+
+.cornerIcon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border-radius: 50%;
+    padding: 4px;
+    color: #0056b3;
 }

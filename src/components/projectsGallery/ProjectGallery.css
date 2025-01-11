@@ -6,3 +6,10 @@
     width: auto;
     justify-content: center;
 }
+
+.projectsFilter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2em;
+}

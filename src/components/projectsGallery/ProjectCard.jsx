@@ -1,11 +1,14 @@
-import {Button, Card, CardActions, CardContent, CardMedia, Chip, Stack, Typography} from "@mui/material";
+import {Button, Card, CardActions, CardContent, CardMedia, Chip, Stack, Tooltip, Typography} from "@mui/material";
 import './ProjectCard.css';
-import {WorkspacePremium} from "@mui/icons-material";
+import {Star, WorkspacePremium} from "@mui/icons-material";
 
 export const ProjectCard = () => {
     return (
         <div className="projectCard">
-            <Card sx={{maxWidth: 345}}>
+            <Card sx={{maxWidth: 345, position: 'relative'}}> {/* Add position: relative */}
+                <div className="cornerIcon">
+                    <Star fontSize="medium"/>
+                </div>
                 <CardMedia
                     component="img"
                     alt="green iguana"
@@ -27,9 +30,11 @@ export const ProjectCard = () => {
                 </CardContent>
                 <CardActions>
                     <Button variant="outlined">Read More</Button>
-                    <span className="iconContainer">
-                        <WorkspacePremium fontSize="large"></WorkspacePremium>
-                    </span>
+                    <Tooltip title="Contenu de la tooltip" arrow>
+                        <span className="iconContainer">
+                            <WorkspacePremium fontSize="large"></WorkspacePremium>
+                        </span>
+                    </Tooltip>
                 </CardActions>
             </Card>
         </div>

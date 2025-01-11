@@ -33,7 +33,7 @@ export const ProjectTimeline = () => {
                         <TimelineConnector/>
                     </TimelineSeparator>
                     <TimelineContent sx={{py: '12px', px: 2}}>
-                        <Container>
+                        <Container containerId="eventContainerDetails">
                             <h3>Titre du Projet</h3>
                             <div className="location">
                                 <LocationOn fontSize="small"/>
