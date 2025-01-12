@@ -2,7 +2,7 @@ import {Container} from "../container/Container.jsx";
 import {SkillComponent} from "./SkillComponent.jsx";
 
 import './SkillSection.css';
-import skills from './skills.json';
+import {skills} from './skills.js';
 
 
 export const SkillsSection = () => {

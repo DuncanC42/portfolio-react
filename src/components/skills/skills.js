@@ -1,13 +1,15 @@
-[
+import viteImage from '../../assets/vite.svg';
+
+export const skills =[
   {
     "category": "Frontend",
     "technos": [
       {
-        "logo": "../../../../public/vite.svg",
+        "logo": viteImage,
         "title": "JavaScript"
       },
       {
-        "logo": "../../../../public/vite.svg",
+        "logo": viteImage,
         "title": "React"
       }
     ]
@@ -16,11 +18,11 @@
     "category": "Backend",
     "technos": [
       {
-        "logo": "../../../../public/vite.svg",
+        "logo": viteImage,
         "title": "Node.js"
       },
       {
-        "logo": "../../../../public/vite.svg",
+        "logo": viteImage,
         "title": "CSS"
       }
     ]

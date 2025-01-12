@@ -1,6 +1,7 @@
-[
+import projectDefaultImage from '../../assets/projectDefaultImage.jpg';
+export const projects =[
   {
-    "image": "/assets/projectDefaultImage.jpg",
+    "image": projectDefaultImage,
     "title": "Project 1",
     "description": "Description for project 1",
     "languages": ["JavaScript", "React"],
@@ -9,7 +10,7 @@
     "buttonLink": "https://example.com/project1"
   },
   {
-    "image": "../../../../public/projectDefaultImage.jpg",
+    "image": projectDefaultImage,
     "title": "Project 2",
     "description": "Description for project 2",
     "languages": ["Python", "Django"],
@@ -18,7 +19,7 @@
     "buttonLink": "https://example.com/project2"
   },
   {
-    "image": "../../../../public/projectDefaultImage.jpg",
+    "image": projectDefaultImage,
     "title": "Project 1",
     "description": "Description for project 1",
     "languages": ["JavaScript", "React"],
@@ -27,7 +28,7 @@
     "buttonLink": "https://example.com/project1"
   },
   {
-    "image": "../../../../public/projectDefaultImage.jpg",
+    "image": projectDefaultImage,
     "title": "Project 2",
     "description": "Description for project 2",
     "languages": ["Python", "Django"],
@@ -36,7 +37,7 @@
     "buttonLink": "https://example.com/project2"
   },
   {
-    "image": "../../../../public/projectDefaultImage.jpg",
+    "image": projectDefaultImage,
     "title": "Project 1",
     "description": "Description for project 1",
     "languages": ["JavaScript", "React"],
@@ -45,7 +46,7 @@
     "buttonLink": "https://example.com/project1"
   },
   {
-    "image": "../../../../public/projectDefaultImage.jpg",
+    "image": projectDefaultImage,
     "title": "Project 2",
     "description": "Description for project 2",
     "languages": ["Python", "Django"],
@@ -54,7 +55,7 @@
     "buttonLink": "https://example.com/project2"
   },
   {
-    "image": "../../../../public/projectDefaultImage.jpg",
+    "image": projectDefaultImage,
     "title": "Project 1",
     "description": "Description for project 1",
     "languages": ["JavaScript", "React"],
@@ -63,7 +64,7 @@
     "buttonLink": "https://example.com/project1"
   },
   {
-    "image": "../../../../public/projectDefaultImage.jpg",
+    "image": projectDefaultImage,
     "title": "Project 2",
     "description": "Description for project 2",
     "languages": ["Python", "Django"],

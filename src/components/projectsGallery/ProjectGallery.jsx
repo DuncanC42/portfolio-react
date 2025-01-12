@@ -4,7 +4,7 @@ import { ProjectCard } from "./ProjectCard.jsx";
 import './ProjectGallery.css';
 import { Chip, Stack } from "@mui/material";
 import { School, Terminal, Work } from "@mui/icons-material";
-import projects from './projects.json';
+import {projects} from './projects.js';
 
 export const ProjectGallery = () => {
     const [selectedChip, setSelectedChip] = useState(null);
