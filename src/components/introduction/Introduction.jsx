@@ -6,6 +6,25 @@ import './Introduction.css';
 
 import duncanImage from '../../assets/IMG_20241110_214015.jpg';
 
+const birthDate = new Date(2004, 4, 24);
+
+// Fonction pour calculer l'âge
+const calculateAge = (birthDate) => {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+
+    // Si nous n'avons pas encore atteint le mois d'anniversaire
+    // ou si nous sommes dans le mois d'anniversaire mais n'avons pas encore atteint le jour
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    return age;
+};
+
+const age = calculateAge(birthDate);
+
 export const Introduction = () => {
     return (
         <Container containerId="about">
@@ -22,7 +41,7 @@ export const Introduction = () => {
                         Étudiant en développement logiciel
                     </h2>
                     <p>
-                        Etudiant de 19 ans <strong>fasciné</strong> par l'informatique
+                        Etudiant de {age} ans <strong>fasciné</strong> par l'informatique
                         depuis mon enfance. J'ai aujourd'hui conscience
                         de par mon <strong>passion</strong> croissante vouloir en faire
                         mon <strong>métier</strong> notamment dans le <strong>développement
