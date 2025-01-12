@@ -2,9 +2,11 @@ import { Typography } from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import { Container } from "../container/Container.jsx";
 
+import './Introduction.css';
+
 export const Introduction = () => {
     return (
-        <Container>
+        <Container containerId="about">
             <Grid container spacing={2} alignItems="center">
                 <Grid size={6} style={{ display: 'flex', justifyContent: 'center' }}>
                     <img src="/public/IMG_20241110_214015.jpg" alt="Description" style={{ width: '35%' }} />

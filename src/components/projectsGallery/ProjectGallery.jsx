@@ -18,7 +18,7 @@ export const ProjectGallery = () => {
         : projects;
 
     return (
-        <Container id="projectContainer" title="Mes Projets">
+        <Container containerId="projectContainer" title="Mes Projets">
             <div className="projectsFilter">
                 <Stack direction="row" spacing={1}>
                     <Chip

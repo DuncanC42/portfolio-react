@@ -19,7 +19,7 @@ const iconMap = {
 
 export const ProjectTimeline = () => {
     return (
-        <Container title="Mon Parcours">
+        <Container title="Mon Parcours" containerId="parcours">
             <div className="timelineContainer">
                 <div>
                     <Timeline position="alternate">

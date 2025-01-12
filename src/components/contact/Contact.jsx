@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Container } from "../container/Container.jsx";
+import React, {useState} from 'react';
+import {Container} from "../container/Container.jsx";
 import './Contact.css'; // Importation du fichier CSS
 
 export function ContactForm() {
@@ -35,7 +35,7 @@ export function ContactForm() {
     };
 
     return (
-        <Container title="Contactez-moi">
+        <Container title="Contactez-moi" containerId="contact" >
             <form onSubmit={handleSubmit} className="contact-form">
                 <div className="nameAndSurnameInput">
                     <div className="form-field">
