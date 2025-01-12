@@ -4,14 +4,23 @@
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+
 }
 
 
 
-#skillContainer > .container {
+#skillContainer {
     display: flex;
     flex-direction: column;
+    justify-content: end;
     align-items: center;
-    width: auto;
+    width: fit-content;
     margin-bottom: 20px;
+}
+
+.technosContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
 }

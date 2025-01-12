@@ -2,28 +2,28 @@ import {Container} from "../container/Container.jsx";
 import {SkillComponent} from "./SkillComponent.jsx";
 
 import './SkillSection.css';
+import skills from './skills.json';
+
 
 export const SkillsSection = () => {
     return (
-        <Container title="Mes Compétences" >
+        <Container title="Mes Compétences">
             <div className="listeSkills">
-                <Container title="Skill name" color="green" containerId="skillContainer">
-                    <SkillComponent></SkillComponent>
-                </Container>
-                <Container title="Skill name" color="green"  containerId="skillContainer">
-                    <SkillComponent></SkillComponent>
-                </Container>
-                <Container title="Skill name" color="green" containerId="skillContainer">
-                    <SkillComponent></SkillComponent>
-                </Container>
-                <Container title="Skill name" color="green" containerId="skillContainer" >
-                    <SkillComponent></SkillComponent>
-                </Container>
-                <Container title="Skill name" color="green" containerId="skillContainer">
-                    <SkillComponent></SkillComponent>
-                </Container>
-            </div>
 
+                {
+                    skills.map((skill, index) => (
+                        <Container title={skill.category} color="green" containerId="skillContainer" key={index}>
+                            <div className="technosContainer">
+                                {skill.technos.map((techno, skillIndex) => (
+                                    <SkillComponent key={skillIndex} {...techno} />
+                                ))}
+                            </div>
+
+                        </Container>
+                    ))
+                }
+
+            </div>
 
         </Container>
     );

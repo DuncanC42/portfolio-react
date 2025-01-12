@@ -1,26 +1,11 @@
 import React from 'react';
 import './SkillComponent.css';
 
-export const SkillComponent = () => {
+export const SkillComponent = ({ logo, title }) => {
     return (
-        <div className="listeSkills">
-            <div>
-                <img src="/public/vite.svg" alt="logoRessource" width="75px"/>
-                <p>techno</p>
+            <div className="skillComponent">
+                <img src={logo} alt="logoRessource" width="75px"/>
+                <p>{title}</p>
             </div>
-            <div>
-                <img src="/public/vite.svg" alt="logoRessource" width="75px"/>
-                <p>techno</p>
-            </div>
-            <div>
-                <img src="/public/vite.svg" alt="logoRessource" width="75px"/>
-                <p>techno</p>
-            </div>
-            <div>
-                <img src="/public/vite.svg" alt="logoRessource" width="75px"/>
-                <p>techno</p>
-            </div>
-
-        </div>
     );
 };

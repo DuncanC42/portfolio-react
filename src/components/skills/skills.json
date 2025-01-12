@@ -1,0 +1,28 @@
+[
+  {
+    "category": "Frontend",
+    "technos": [
+      {
+        "logo": "/public/vite.svg",
+        "title": "JavaScript"
+      },
+      {
+        "logo": "/public/vite.svg",
+        "title": "React"
+      }
+    ]
+  },
+  {
+    "category": "Backend",
+    "technos": [
+      {
+        "logo": "/public/vite.svg",
+        "title": "Node.js"
+      },
+      {
+        "logo": "/public/vite.svg",
+        "title": "CSS"
+      }
+    ]
+  }
+]
