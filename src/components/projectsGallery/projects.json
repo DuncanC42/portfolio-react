@@ -1,6 +1,6 @@
 [
   {
-    "image": "../../../../public/projectDefaultImage.jpg",
+    "image": "/assets/projectDefaultImage.jpg",
     "title": "Project 1",
     "description": "Description for project 1",
     "languages": ["JavaScript", "React"],
