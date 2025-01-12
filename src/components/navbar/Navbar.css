@@ -15,3 +15,30 @@
 .navbar-link:hover {
     text-decoration: underline;
 }
+
+.menu-items {
+    display: flex;
+}
+
+.menu-button {
+    display: none;
+}
+
+.menuBurger {
+    display: none;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .menu-items {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .menuBurger {
+        display: block;
+    }
+}

@@ -2,9 +2,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
-.timelineContainer>div {
+.timelineContainer > div {
     width: 75%;
 }
 
+#eventContainerDetails {
+    color: black;
+}
+
+/* Styles pour les grands écrans (PC) */
+.timelineContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.timelineContainer > div {
+    width: 75%;
+}
+
+/* Styles pour les petits écrans (Téléphone) */
+@media (max-width: 768px) {
+    .timelineContainer {
+        align-items: flex-start;
+    }
+
+    .timelineContainer > div {
+        width: 100%;
+        margin-left: -20px;
+    }
+
+    /* Masquer le contenu opposé (les dates) */
+    .MuiTimelineOppositeContent-root {
+        display: none !important;
+    }
+
+    /* Ajuster le contenu principal pour qu'il prenne toute la largeur */
+    .MuiTimelineContent-root {
+        text-align: left;
+        padding-right: 16px;
+    }
+
+    /* Assurer que les cartes d'événements ne débordent pas */
+    #eventContainerDetails {
+        margin-right: 8px;
+        width: calc(100% - 8px);
+    }
+
+    /* Ajuster la largeur de la timeline pour compenser l'absence des dates */
+    .MuiTimeline-root {
+        padding-left: 25px;
+    }
+}
