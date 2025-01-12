@@ -1,42 +1,73 @@
-import {Container} from "../container/Container.jsx";
-import {ProjectCard} from "./ProjectCard.jsx";
+import React, { useState } from 'react';
+import { Container } from "../container/Container.jsx";
+import { ProjectCard } from "./ProjectCard.jsx";
 import './ProjectGallery.css';
-import {Chip, Stack} from "@mui/material";
-import {School, Terminal, Work} from "@mui/icons-material";
+import { Chip, Stack } from "@mui/material";
+import { School, Terminal, Work } from "@mui/icons-material";
 import projects from './projects.json';
 
-function handleDelete() {
-    console.log('You clicked the delete icon.');
-}
-
 export const ProjectGallery = () => {
+    const [selectedChip, setSelectedChip] = useState(null);
+
+    const handleChipClick = (chip) => {
+        setSelectedChip(chip === selectedChip ? null : chip);
+    };
+
+    const filteredProjects = selectedChip
+        ? projects.filter(project => project.projectType === selectedChip)
+        : projects;
+
     return (
         <Container id="projectContainer" title="Mes Projets">
             <div className="projectsFilter">
                 <Stack direction="row" spacing={1}>
                     <Chip
                         label="School"
-                        onClick={handleDelete}
-                        icon={<School/>}
+                        onClick={() => handleChipClick('school')}
+                        icon={<School />}
+                        variant='outlined'
+                        sx={{
+                            fontSize: '1rem',
+                            height: '40px',
+                            padding: '0 10px',
+                            backgroundColor: selectedChip === 'school' ? 'lightblue' : 'white',
+                            color: selectedChip === 'school' ? 'white' : 'black'
+                        }}
                     />
                     <Chip
-                        label="Personnal"
-                        onClick={handleDelete}
-                        icon={<Terminal/>}
+                        label="Personal"
+                        onClick={() => handleChipClick('personal')}
+                        icon={<Terminal />}
+                        variant='outlined'
+                        sx={{
+                            fontSize: '1rem',
+                            height: '40px',
+                            padding: '0 10px',
+                            backgroundColor: selectedChip === 'personal' ? 'lightblue' : 'white',
+                            color: selectedChip === 'personal' ? 'white' : 'black'
+                        }}
                     />
                     <Chip
                         label="Entreprise"
-                        onClick={handleDelete}
-                        icon={<Work/>}
+                        onClick={() => handleChipClick('professional')}
+                        icon={<Work />}
+                        variant='outlined'
+                        sx={{
+                            fontSize: '1rem',
+                            height: '40px',
+                            padding: '0 10px',
+                            backgroundColor: selectedChip === 'professional' ? 'lightblue' : 'white',
+                            color: selectedChip === 'professional' ? 'white' : 'black'
+                        }}
                     />
                 </Stack>
             </div>
 
             <div className="ProjectGallery">
-                {projects.map((project, index) => (
+                {filteredProjects.map((project, index) => (
                     <ProjectCard key={index} {...project} />
                 ))}
             </div>
         </Container>
     );
-}
+};
