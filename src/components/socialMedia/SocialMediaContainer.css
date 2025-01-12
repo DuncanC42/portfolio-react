@@ -1,0 +1,30 @@
+.socialbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#socialMedia {
+    display: flex;
+    width: fit-content;
+}
+
+#socialMedia a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.socialText {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    white-space: nowrap;
+    color: black;
+}
+
+#socialMedia a:hover .socialText {
+    width: 80px;
+    margin-left: 10px;
+}

@@ -5,6 +5,7 @@ import {Introduction} from "./components/introduction/Introduction.jsx";
 import {ProjectGallery} from "./components/projectsGallery/ProjectGallery.jsx";
 import {SkillsSection} from "./components/skills/SkillsSection.jsx";
 import ContactForm from "./components/contact/Contact.jsx";
+import {SocialMediaContainer} from "./components/socialMedia/SocialMediaContainer.jsx";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <ProjectGallery></ProjectGallery>
         <SkillsSection></SkillsSection>
         <ContactForm></ContactForm>
+        <SocialMediaContainer></SocialMediaContainer>
     </>
   )
 }
