@@ -2,8 +2,8 @@ import {Container} from "../container/Container.jsx";
 import {ProjectCard} from "./ProjectCard.jsx";
 import './ProjectGallery.css';
 import {Chip, Stack} from "@mui/material";
-import DoneIcon from '@mui/icons-material/Done';
 import {School, Terminal, Work} from "@mui/icons-material";
+import projects from './projects.json';
 
 function handleDelete() {
     console.log('You clicked the delete icon.');
@@ -33,17 +33,10 @@ export const ProjectGallery = () => {
             </div>
 
             <div className="ProjectGallery">
-                <ProjectCard></ProjectCard>
-                <ProjectCard></ProjectCard>
-                <ProjectCard></ProjectCard>
-                <ProjectCard></ProjectCard>
-                <ProjectCard></ProjectCard>
-                <ProjectCard></ProjectCard>
-                <ProjectCard></ProjectCard>
-                <ProjectCard></ProjectCard>
-                <ProjectCard></ProjectCard>
+                {projects.map((project, index) => (
+                    <ProjectCard key={index} {...project} />
+                ))}
             </div>
-
         </Container>
     );
 }

@@ -1,36 +1,44 @@
 import {Button, Card, CardActions, CardContent, CardMedia, Chip, Stack, Tooltip, Typography} from "@mui/material";
 import './ProjectCard.css';
-import {Star, WorkspacePremium} from "@mui/icons-material";
+import {School, Terminal, Work, WorkspacePremium} from "@mui/icons-material";
 
-export const ProjectCard = () => {
+const iconMap = {
+    school: <School fontSize="large" />,
+    professional: <Work fontSize="large" />,
+    personal: <Terminal fontSize="large" />
+};
+
+export const ProjectCard = ({ image, title, description, languages, projectType, tooltipContent, buttonLink }) => {
     return (
         <div className="projectCard">
-            <Card sx={{maxWidth: 345, position: 'relative'}}> {/* Add position: relative */}
+            <Card sx={{maxWidth: 345, position: 'relative'}}>
                 <div className="cornerIcon">
-                    <Star fontSize="medium"/>
+                    {iconMap[projectType]}
                 </div>
                 <CardMedia
                     component="img"
-                    alt="green iguana"
+                    alt={title}
                     height="300"
-                    image="/public/projectDefaultImage.jpg"
+                    image={image}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        Titre du projet
+                        {title}
                     </Typography>
                     <Typography variant="body2" sx={{color: 'text.secondary'}}>
-                        Courte description du projet
+                        {description}
                     </Typography>
                     <div className="projectsTechnologies">
                         <Stack direction="row" spacing={1}>
-                            <Chip label="language" size="small"/>
+                            {languages.map((language, index) => (
+                                <Chip key={index} label={language} size="small"/>
+                            ))}
                         </Stack>
                     </div>
                 </CardContent>
                 <CardActions>
-                    <Button variant="outlined">Read More</Button>
-                    <Tooltip title="Contenu de la tooltip" arrow>
+                    <Button variant="outlined" href={buttonLink}>Read More</Button>
+                    <Tooltip title={tooltipContent} arrow>
                         <span className="iconContainer">
                             <WorkspacePremium fontSize="large"></WorkspacePremium>
                         </span>
