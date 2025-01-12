@@ -9,7 +9,7 @@ export const Introduction = () => {
         <Container containerId="about">
             <Grid container spacing={2} alignItems="center">
                 <Grid size={6} style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="/public/IMG_20241110_214015.jpg" alt="Description" style={{ width: '35%' }} />
+                    <img src="../../../public/IMG_20241110_214015.jpg" alt="Description" style={{ width: '35%' }} />
                 </Grid>
                 <Grid size={6} style={{ display: 'flex', alignItems: 'start', justifyContent: 'start', flexDirection: 'column' }}>
                     <Typography variant="h1" component="h1">
