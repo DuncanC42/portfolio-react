@@ -1,18 +1,44 @@
 [
   {
-    "start": "2022-01-01",
-    "end": "2022-12-31",
-    "title": "Titre de l'évènement 1",
-    "location": "Lieu de l'évènement 1",
-    "description": "Description de l'évènement 1",
-    "icon": "School"
+    "start": "2019",
+    "end": "2022",
+    "title": "Baccalauréat général",
+    "location": "Ploërmel",
+    "establishment": {
+      "nom": "Lycée La Mennais",
+      "lien": "https://www.lycee-lamennais.fr/"
+    },
+    "description": "",
+    "icon": "School",
+    "specialties": ["Mathématiques", "Numérique et Sciences Informatiques"],
+    "option": "LV3: Japonais",
+    "detailsLink": "https://www.lycee-lamennais.fr/baccalaureat-general"
   },
   {
-    "start": "2023-01-01",
-    "end": "2023-12-31",
-    "title": "Titre de l'évènement 2",
-    "location": "Lieu de l'évènement 2",
+    "start": "2022",
+    "end": "2025",
+    "title": "BUT Informatique",
+    "location": "Lannion",
+    "establishment": {
+      "nom": "IUT Lannion",
+      "lien": "https://www.lycee-lamennais.fr/"
+    },
+    "icon": "School",
+    "specialties": ["Développement d'application"],
+    "option": "Internship",
+    "detailsLink": "https://example.com/event2-details"
+  },
+  {
+    "start": "2023",
+    "end": "2025",
+    "title": "Alternance, Développeur Web",
+    "location": "Plérin",
+    "establishment": {
+      "nom": "Arche MC2",
+      "lien": "https://www.lycee-lamennais.fr/"
+    },
     "description": "Description de l'évènement 2",
-    "icon": "Work"
+    "icon": "Work",
+    "option": "Internship"
   }
 ]

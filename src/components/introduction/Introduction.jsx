@@ -1,4 +1,4 @@
-import {Typography} from "@mui/material";
+import {Button, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import {Container} from "../container/Container.jsx";
 
@@ -43,16 +43,16 @@ export const Introduction = () => {
                     <p>
                         Etudiant de {age} ans <strong>fasciné</strong> par l'informatique
                         depuis mon enfance. J'ai aujourd'hui conscience
-                        de par mon <strong>passion</strong> croissante vouloir en faire
+                        de par ma <strong>passion</strong> croissante vouloir en faire
                         mon <strong>métier</strong> notamment dans le <strong>développement
                         logiciel et applicatif</strong>.
                         En dehors de l'informatique je pratique le judo depuis
                         mes 6 ans, c'est le sport qui m'a permis de grandir
                         et d'évoluer tout en développant les valeurs qui me
-                        sont propres.<br/>Allez donc voir
-                        <a href="Data/Cadoret_Duncan_CV_rouge.pdf" target="_blank">
-                            <button>Mon CV</button>
-                        </a>
+                        sont propres.
+                        <p>Allez donc voir
+                                <Button variant="contained" href="#">Mon CV</Button>
+                        </p>
                     </p>
                 </span>
             </div>

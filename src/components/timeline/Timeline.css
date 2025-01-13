@@ -13,6 +13,11 @@
     color: black;
 }
 
+#eventContainerDetails>a {
+    text-decoration: underline;
+    color: black;
+}
+
 /* Styles pour les grands écrans (PC) */
 .timelineContainer {
     display: flex;

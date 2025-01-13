@@ -25,6 +25,6 @@
 }
 
 #socialMedia a:hover .socialText {
-    width: 80px;
-    margin-left: 10px;
+    margin-left: 20px;
+    width: 150px;
 }

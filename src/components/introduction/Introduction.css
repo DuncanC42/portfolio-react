@@ -20,7 +20,7 @@
 .introPicture > img {
     width: 100%;
     max-width: 350px;
-    border-radius: 25%;
+    border-radius: 55px;
     height: auto;
 }
 

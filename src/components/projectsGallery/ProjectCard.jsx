@@ -37,7 +37,9 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                     </div>
                 </CardContent>
                 <CardActions>
-                    <Button variant="outlined" href={buttonLink}>Read More</Button>
+                    <Button variant="outlined" href={buttonLink} disabled={!buttonLink}>
+                        Read More
+                    </Button>
                     <Tooltip title={tooltipContent} arrow>
                         <span className="iconContainer">
                             <WorkspacePremium fontSize="large" />

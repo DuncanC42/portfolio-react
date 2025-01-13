@@ -1,20 +1,24 @@
+import linkedin from "../../assets/Linkedin.svg";
+import github from "../../assets/GitHub.svg";
+import discord from "../../assets/Discord.svg";
+
 export const socialMediaLinks = [
     {
         id: 1,
-        name: "Duncan",
-        image: "/path/to/duncan-image.svg",
+        name: "shi2gami42",
+        image: discord,
         link: "#duncan"
     },
     {
         id: 2,
-        name: "GitHub",
-        image: "/path/to/github-logo.svg",
+        name: "DuncanC42",
+        image: github,
         link: "https://github.com"
     },
     {
         id: 3,
-        name: "LinkedIn",
-        image: "/path/to/linkedin-logo.svg",
+        name: "in/Duncan-Cadoret",
+        image: linkedin,
         link: "https://linkedin.com"
     }
 ];
