@@ -38,6 +38,7 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
 
     return (
         <div>
+            {/* Carte cliquable */}
             <div className="projectCard" onClick={handleOpen}>
                 <Card sx={{ maxWidth: 345, position: 'relative', cursor: 'pointer' }}>
                     <div className="cornerIcon">
@@ -62,15 +63,10 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                             </Stack>
                         </div>
                     </CardContent>
-                    <CardActions>
-                        <Button variant="outlined" href={buttonLink} disabled={!buttonLink}>
-                            Read More
+                    <CardActions sx={{ justifyContent: "flex-end" }}>
+                        <Button variant="outlined">
+                            Détails
                         </Button>
-                        <Tooltip title={tooltipContent} arrow>
-                            <span className="iconContainer">
-                                <WorkspacePremium fontSize="large" />
-                            </span>
-                        </Tooltip>
                     </CardActions>
                 </Card>
             </div>
@@ -95,6 +91,12 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                     </Typography>
                     <Typography id="modal-description" variant="body1" sx={{ mb: 2 }}>
                         {description}
+                    </Typography>
+                    <Typography variant="subtitle1" sx={{ fontWeight: 'bold', mb: 1 }}>
+                        Informations supplémentaires
+                    </Typography>
+                    <Typography variant="body2" sx={{ mb: 2 }}>
+                        {tooltipContent}
                     </Typography>
                     <Typography variant="subtitle1" sx={{ fontWeight: 'bold', mb: 1 }}>
                         Technologies Used:
