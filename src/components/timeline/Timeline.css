@@ -13,10 +13,11 @@
     color: black;
 }
 
-#eventContainerDetails>a {
-    text-decoration: underline;
+.locationLink{
     color: black;
 }
+
+
 
 /* Styles pour les grands écrans (PC) */
 .timelineContainer {
@@ -28,6 +29,7 @@
 
 .timelineContainer > div {
     width: 75%;
+    color: black;
 }
 
 /* Styles pour les petits écrans (Téléphone) */

@@ -52,7 +52,7 @@ export const ProjectTimeline = () => {
                                 </TimelineOppositeContent>
                                 <TimelineSeparator>
                                     <TimelineConnector/>
-                                    <TimelineDot>
+                                    <TimelineDot sx={{backgroundColor: "#D8C4B6"}}>
                                         {iconMap[event.icon]}
                                     </TimelineDot>
                                     <TimelineConnector/>
@@ -62,10 +62,10 @@ export const ProjectTimeline = () => {
                                     py: '12px',
                                     px: 2,
                                 }}>
-                                    <Container containerId="eventContainerDetails" color="white">
+                                    <Container containerId="eventContainerDetails" color="#F5EFE7">
                                         <h3>{event.title}</h3>
 
-                                        <LocationOn fontSize="medium"/> <a href={event.establishment.lien}
+                                        <LocationOn fontSize="medium"/> <a className="locationLink" href={event.establishment.lien}
                                                                            target="_blank"
                                                                            rel="noopener noreferrer">{event.establishment.nom}</a>, {event.location}
                                         <div className="description">
@@ -81,11 +81,24 @@ export const ProjectTimeline = () => {
                                                 <strong>Option:</strong> {event.option}
                                             </div>
                                         )}
-                                        {event.detailsLink && (
-                                            <Button variant="contained" href={event.detailsLink} target="_blank"
-                                                    rel="noopener noreferrer">
+                                        {(
+                                            <Button
+                                                variant="contained"
+                                                href={event.detailsLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                sx={{
+                                                    backgroundColor: '#3E5879', // Couleur de fond
+                                                    color: 'white', // Couleur du texte
+
+                                                    '&:hover': {
+                                                        backgroundColor: '#213555', // Couleur au survol
+                                                    }
+                                                }}
+                                            >
                                                 Details
                                             </Button>
+
                                         )}
                                     </Container>
                                 </TimelineContent>

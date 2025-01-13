@@ -24,40 +24,40 @@ export const ProjectGallery = () => {
                     <Chip
                         label="School"
                         onClick={() => handleChipClick('school')}
-                        icon={<School />}
-                        variant='outlined'
+                        icon={<School color='white' />}
+                        variant='filled'
                         sx={{
                             fontSize: '1rem',
                             height: '40px',
                             padding: '0 10px',
-                            backgroundColor: selectedChip === 'school' ? 'lightblue' : 'white',
+                            backgroundColor: selectedChip === 'school' ? '#D8C4B6' : '#F5EFE7',
                             color: selectedChip === 'school' ? 'white' : 'black'
                         }}
                     />
                     <Chip
                         label="Personal"
                         onClick={() => handleChipClick('personal')}
-                        icon={<Terminal />}
-                        variant='outlined'
+                        icon={<Terminal color='white'/>}
+                        variant='filled'
                         sx={{
                             fontSize: '1rem',
                             height: '40px',
                             padding: '0 10px',
-                            backgroundColor: selectedChip === 'personal' ? 'lightblue' : 'white',
+                            backgroundColor: selectedChip === 'personal' ? '#D8C4B6' : '#F5EFE7',
                             color: selectedChip === 'personal' ? 'white' : 'black'
                         }}
                     />
                     <Chip
                         label="Entreprise"
                         onClick={() => handleChipClick('professional')}
-                        icon={<Work />}
-                        variant='outlined'
+                        icon={<Work color='white'/>}
+                        variant='filled'
                         sx={{
                             fontSize: '1rem',
                             height: '40px',
                             padding: '0 10px',
-                            backgroundColor: selectedChip === 'professional' ? 'lightblue' : 'white',
-                            color: selectedChip === 'professional' ? 'white' : 'black'
+                            backgroundColor: selectedChip === 'professional' ? '#D8C4B6' : '#F5EFE7',
+                            color: selectedChip === 'professional' ? 'white' : 'black',
                         }}
                     />
                 </Stack>

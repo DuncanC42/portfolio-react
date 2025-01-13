@@ -15,7 +15,11 @@
 }
 
 .projectCard button:hover{
-    background-color: #ff3636;
+    background-color: #213555;
+    color: white;
+}
+.projectCard button{
+    background-color: #3E5879;
     color: white;
 }
 
@@ -31,5 +35,5 @@
     right: 16px;
     border-radius: 50%;
     padding: 4px;
-    color: #0056b3;
+    color: #F5EFE7;
 }

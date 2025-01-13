@@ -7,7 +7,7 @@ export const SocialMediaContainer = () => {
         <Container>
             <div className="socialbar">
                 {socialMediaLinks.map((link) => (
-                    <Container key={link.id} containerId="socialMedia" color="white">
+                    <Container key={link.id} containerId="socialMedia" color="#F5EFE7">
                         <a href={link.link} target="_blank" rel="noopener noreferrer">
                             <img src={link.image} alt={link.name} width="50px" height="50px" />
                             <div className="socialText">

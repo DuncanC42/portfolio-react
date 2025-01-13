@@ -19,13 +19,32 @@
 
 .introPicture > img {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     border-radius: 55px;
     height: auto;
+    transform: scaleX(-1);
 }
 
 .introText {
     text-align: justify;
+}
+
+.introText>p{
+    margin-bottom: 10px;
+}
+
+.introButton{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#about a:hover{
+    background-color: #213555;
+}
+#about a{
+    background-color: #3E5879;
+    width: fit-content;
 }
 
 /* Responsive layout for smaller screens */

@@ -50,7 +50,7 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                         height="300"
                         image={image}
                     />
-                    <CardContent>
+                    <CardContent sx={{backgroundColor: '#F5EFE7'}}>
                         <Typography gutterBottom variant="h5" component="div">
                             {title}
                         </Typography>
@@ -63,7 +63,9 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                             </Stack>
                         </div>
                     </CardContent>
-                    <CardActions sx={{ justifyContent: "flex-end" }}>
+                    <CardActions sx={{ justifyContent: "flex-end",
+                                        backgroundColor: "#F5EFE7"
+                                    }}>
                         <Button variant="outlined">
                             Détails
                         </Button>
