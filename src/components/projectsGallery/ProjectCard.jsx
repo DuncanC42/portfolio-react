@@ -3,6 +3,8 @@ import { Button, Card, CardActions, CardContent, CardMedia, Chip, Modal, Stack, 
 import './ProjectCard.css';
 import { School, Terminal, Work, WorkspacePremium } from "@mui/icons-material";
 
+import defaultImage from "../../assets/defaultImage.jpg";
+
 const iconMap = {
     school: <School fontSize="large" />,
     professional: <Work fontSize="large" />,
@@ -48,7 +50,7 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                         component="img"
                         alt={title}
                         height="300"
-                        image={image}
+                        image={image || defaultImage}
                     />
                     <CardContent sx={{backgroundColor: '#F5EFE7'}}>
                         <Typography gutterBottom variant="h5" component="div">

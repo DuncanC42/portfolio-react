@@ -65,7 +65,8 @@ export const ProjectTimeline = () => {
                                     <Container containerId="eventContainerDetails" color="#F5EFE7">
                                         <h3>{event.title}</h3>
 
-                                        <LocationOn fontSize="medium"/> <a className="locationLink" href={event.establishment.lien}
+                                        <LocationOn fontSize="medium"/> <a className="locationLink"
+                                                                           href={event.establishment.lien}
                                                                            target="_blank"
                                                                            rel="noopener noreferrer">{event.establishment.nom}</a>, {event.location}
                                         <div className="description">
@@ -73,7 +74,7 @@ export const ProjectTimeline = () => {
                                         </div>
                                         {event.specialties && (
                                             <div className="specialties">
-                                                <strong>Specialties:</strong> {event.specialties.join(', ')}
+                                                <strong>{event.specialties.length > 1 ? 'Spécialités' : 'Spécialité'}:</strong> {event.specialties.join(', ')}
                                             </div>
                                         )}
                                         {event.option && (

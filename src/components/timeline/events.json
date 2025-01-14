@@ -21,12 +21,11 @@
     "location": "Lannion",
     "establishment": {
       "nom": "IUT Lannion",
-      "lien": "https://www.lycee-lamennais.fr/"
+      "lien": "https://iut-lannion.univ-rennes.fr/"
     },
     "icon": "School",
-    "specialties": ["Développement d'application"],
-    "option": "Internship",
-    "detailsLink": "https://example.com/event2-details"
+    "specialties": ["Développement logiciel"],
+    "detailsLink": "https://iut-lannion.univ-rennes.fr/sites/iut-lannion.univ-rennes.fr/files/medias/files/Plaquette%20BUT%20Informatique.pdf"
   },
   {
     "start": "2023",
@@ -35,10 +34,21 @@
     "location": "Plérin",
     "establishment": {
       "nom": "Arche MC2",
-      "lien": "https://www.lycee-lamennais.fr/"
+      "lien": "https://arche-mc2.fr/"
     },
-    "description": "Description de l'évènement 2",
-    "icon": "Work",
-    "option": "Internship"
+    "description": "Mon alternance au sein de arche MC2 pour m'accompagner dans mon cursus de BUT Informatique.",
+    "icon": "Work"
+  },
+  {
+    "start": "2025",
+    "end": "2028",
+    "title": "École d'ingénieur",
+    "location": " ? ",
+    "establishment": {
+      "nom": " ? ",
+      "lien": ""
+    },
+    "description": "Faire une école d'ingénieur, probablement dans le domaine de l'architecture logiciel ou bien en système embarqué je ne sais pas encore tellement",
+    "icon": "School"
   }
 ]

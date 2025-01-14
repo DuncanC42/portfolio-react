@@ -13,12 +13,12 @@ export const socialMediaLinks = [
         id: 2,
         name: "DuncanC42",
         image: github,
-        link: "https://github.com"
+        link: "https://github.com/DuncanC42"
     },
     {
         id: 3,
-        name: "in/Duncan-Cadoret",
+        name: "In/Duncan-Cadoret",
         image: linkedin,
-        link: "https://linkedin.com"
+        link: "https://www.linkedin.com/in/duncan-cadoret-baa11826a/"
     }
 ];

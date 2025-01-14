@@ -1,6 +1,11 @@
 import puissance4Image from '../../assets/projectDefaultImage.jpg';
 import chevalBlanc from '../../assets/logoChevalBlanc.jpg';
 import breizhIle from '../../assets/breizhIle.png';
+import protfolioImage from '../../assets/portfolio.png';
+import directChatImage from '../../assets/directChat.png';
+import arch from '../../assets/archmc2.png';
+
+import swagger from '../../assets/swagger.png';
 
 export const projects =[
   {
@@ -39,7 +44,7 @@ export const projects =[
     "buttonLink": "https://github.com/Alex041718/Breizh-ile/tree/develop"
   },
   {
-    "image": puissance4Image,
+    "image": protfolioImage,
     "title": "Mon portfolio",
     "description": "Réalisations de mon portfolio en React",
     "languages": ["JS", "React", "Css"],
@@ -48,7 +53,7 @@ export const projects =[
     "buttonLink": "https://github.com/DuncanC42/portfolio-react"
   },
   {
-    "image": puissance4Image,
+    "image": swagger,
     "title": "D-Shop Api",
     "description": "Implémentation d'un backend pour un site e-commerce fictif",
     "languages": ["Java", "Spring", "Hibernate"],
@@ -57,7 +62,7 @@ export const projects =[
     "buttonLink": "https://github.com/DuncanC42/d-shop-api/tree/master"
   },
   {
-    "image": puissance4Image,
+    "image": directChatImage,
     "title": "Direct Chat",
     "description": "Direct chat est une simple application pour comprendre le principe des websockets",
     "languages": ["Java", "Spring", "Websocket", "Html", "Css"],
@@ -66,7 +71,7 @@ export const projects =[
     "buttonLink": "https://github.com/DuncanC42/directChat"
   },
   {
-    "image": puissance4Image,
+    "image": swagger,
     "title": "Maestro Api",
     "description": "Api de gestion des données pour le jeu Maestro",
     "languages": ["Java", "Spring", "Spring Data Jpa", "Hibernate"],
@@ -75,7 +80,6 @@ export const projects =[
     "buttonLink": "https://github.com/DuncanC42/maestro-api"
   },
   {
-    "image": puissance4Image,
     "title": "Maestro",
     "description": "Interface du jeu Maestro où l'on doit deviner qui à choisit quelle musique dans un groupe de joueurs",
     "languages": ["JS", "React", "Css"],
@@ -84,7 +88,7 @@ export const projects =[
     "buttonLink": "https://example.com/project2"
   },
   {
-    "image": puissance4Image,
+    "image": arch,
     "title": "Solis - France Travail",
     "description": "Développement d'écrans pour l'accompagnement des bénéficaires du RSA au sein du logiciel Solis",
     "languages": ["JS", "Bootstrap", "Spring", "JDBC"],

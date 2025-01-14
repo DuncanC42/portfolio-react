@@ -31,7 +31,7 @@ export const ProjectGallery = () => {
                             height: '40px',
                             padding: '0 10px',
                             backgroundColor: selectedChip === 'school' ? '#D8C4B6' : '#F5EFE7',
-                            color: selectedChip === 'school' ? 'white' : 'black'
+                            color: selectedChip === 'school' ? 'white' : 'black',
                         }}
                     />
                     <Chip
