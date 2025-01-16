@@ -70,10 +70,10 @@ export const skills = [
                 "logo": php,
                 "title": "PHP"
             },
-            {
-                "logo": python,
-                "title": "Python"
-            }
+            // {
+            //     "logo": python,
+            //     "title": "Python"
+            // }
         ]
     },
     {
@@ -87,10 +87,10 @@ export const skills = [
                 "logo": react,
                 "title": "React"
             },
-            {
-                "logo": javafx,
-                "title": "JavaFX"
-            },
+            // {
+            //     "logo": javafx,
+            //     "title": "JavaFX"
+            // },
             {
                 "logo": jquery,
                 "title": "JQuery"
