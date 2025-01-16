@@ -43,11 +43,6 @@
     "start": "2025",
     "end": "2028",
     "title": "École d'ingénieur",
-    "location": " ? ",
-    "establishment": {
-      "nom": " ? ",
-      "lien": ""
-    },
     "description": "Faire une école d'ingénieur, probablement dans le domaine de l'architecture logiciel ou bien en système embarqué je ne sais pas encore tellement",
     "icon": "School"
   }

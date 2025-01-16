@@ -100,7 +100,11 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                         Informations supplémentaires
                     </Typography>
                     <Typography variant="body2" sx={{ mb: 2 }}>
-                        {tooltipContent}
+                        <ul>
+                            {tooltipContent.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul>
                     </Typography>
                     <Typography variant="subtitle1" sx={{ fontWeight: 'bold', mb: 1 }}>
                         Technologies Used:
