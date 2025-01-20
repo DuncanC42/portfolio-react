@@ -7,8 +7,17 @@ import {SkillsSection} from "./components/skills/SkillsSection.jsx";
 import ContactForm from "./components/contact/Contact.jsx";
 import {SocialMediaContainer} from "./components/socialMedia/SocialMediaContainer.jsx";
 
-function App() {
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {useEffect} from "react";
 
+
+
+function App() {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
   return (
     <>
         <Navbar></Navbar>

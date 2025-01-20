@@ -41,7 +41,7 @@ export const ProjectTimeline = () => {
                 <div>
                     <Timeline position={isMobile ? "right" : "alternate"}>
                         {events.map((event, index) => (
-                            <TimelineItem key={index}>
+                            <TimelineItem key={index} data-aos="fade-down">
                                 <TimelineOppositeContent
                                     sx={{m: 'auto 0'}}
                                     align="right"

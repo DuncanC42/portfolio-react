@@ -39,7 +39,7 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
     };
 
     return (
-        <div>
+        <div data-aos="fade-down">
             {/* Carte cliquable */}
             <div className="projectCard" onClick={handleOpen}>
                 <Card sx={{ maxWidth: 345, position: 'relative', cursor: 'pointer' }}>

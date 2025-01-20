@@ -29,7 +29,7 @@ const age = calculateAge(birthDate);
 export const Introduction = () => {
     return (
         <Container containerId="about">
-            <div className="intro">
+            <div className="intro" data-aos="fade-up">
                 <div className="introPicture">
                     <img src={duncanImage} alt="Description"/>
                 </div>

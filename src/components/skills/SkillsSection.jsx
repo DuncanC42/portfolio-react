@@ -13,7 +13,7 @@ export const SkillsSection = () => {
                 {
                     skills.map((skill, index) => (
                         <Container title={skill.category} containerId="skillContainer" key={index}>
-                            <div className="technosContainer">
+                            <div className="technosContainer" data-aos="fade-down">
                                 {skill.technos.map((techno, skillIndex) => (
                                     <SkillComponent key={skillIndex} {...techno} />
                                 ))}
