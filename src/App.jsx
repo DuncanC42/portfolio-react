@@ -10,6 +10,9 @@ import {SocialMediaContainer} from "./components/socialMedia/SocialMediaContaine
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {useEffect} from "react";
+import {MusicContainer} from "./components/musicGallery/MusicContainer.jsx";
+import {Container} from "./components/container/Container.jsx";
+import {PhotoGallery} from "./components/photoGallery/PhotoGallery.jsx";
 
 
 
@@ -27,6 +30,10 @@ function App() {
         <SkillsSection></SkillsSection>
         <ContactForm></ContactForm>
         <SocialMediaContainer></SocialMediaContainer>
+        <Container containerId="otherMediaContainer">
+            <MusicContainer></MusicContainer>
+            <PhotoGallery></PhotoGallery>
+        </Container>
     </>
   )
 }
