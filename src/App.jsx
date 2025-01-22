@@ -31,8 +31,8 @@ function App() {
         <ContactForm></ContactForm>
         <SocialMediaContainer></SocialMediaContainer>
         <Container containerId="otherMediaContainer">
-            <MusicContainer></MusicContainer>
-            <PhotoGallery></PhotoGallery>
+            <MusicContainer />
+            <PhotoGallery />
         </Container>
     </>
   )

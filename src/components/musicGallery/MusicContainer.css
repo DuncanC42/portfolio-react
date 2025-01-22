@@ -1,0 +1,19 @@
+/* src/components/musicGallery/MusicContainer.css */
+.musicContainer {
+    width: 100%;  /* Match the width of the photo gallery */
+    margin-right: 2rem;  /* Add some spacing between components */
+}
+
+.musicContainer h2 {
+    margin-bottom: 1rem;
+}
+
+.musicContainer>h3 {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.playerContainer {
+    width: 100%;
+    padding-top: 50px;
+}

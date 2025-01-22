@@ -46,9 +46,17 @@ body{
     background-color: #3E5879;
 }
 
-#otherMediaContainer{
+/* Add this to a common CSS file or a new CSS file */
+#otherMediaContainer {
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
-    gap: 20px;
+    justify-content: space-around;
+    gap: 35px;
+}
+
+@media (max-width: 768px) {
+    #otherMediaContainer {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
