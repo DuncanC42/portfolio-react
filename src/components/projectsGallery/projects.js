@@ -75,7 +75,7 @@ export const projects = [
         image: directChatImage,
         title: "Direct Chat",
         description: "Direct chat est une simple application pour comprendre le principe des websockets",
-        languages: ["Java", "Spring", "Websocket", "Html", "Css"],
+        languages: ["Java", "Spring", "Websocket"],
         projectType: "personal",
         tooltipContent: ["Tooltip for project 2"],
         buttonLink: "https://github.com/DuncanC42/directChat"
@@ -84,7 +84,7 @@ export const projects = [
         image: swagger,
         title: "Maestro Api",
         description: "Api de gestion des données pour le jeu Maestro",
-        languages: ["Java", "Spring", "Spring Data Jpa", "Hibernate"],
+        languages: ["Java", "Spring", "Jpa", "Hibernate"],
         projectType: "personal",
         tooltipContent: ["En cours de développement"],
         buttonLink: "https://github.com/DuncanC42/maestro-api"
@@ -100,7 +100,7 @@ export const projects = [
     {
         title: "NaturaLinked",
         description: "Réseaux social pour organiser des évènements de nettoyage de la nature",
-        languages: ["Spring", "JDBC", "Dart", "Flutter", "Microservices"],
+        languages: ["Spring", "JDBC", "Dart", "Flutter"],
         projectType: "personal",
         tooltipContent: ["En cours de développement"],
         buttonLink: "https://github.com/DuncanC42/NaturaLinkedApi/tree/master"

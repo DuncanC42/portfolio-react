@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Button, Card, CardActions, CardContent, CardMedia, Chip, Modal, Stack, Tooltip, Typography, Box } from "@mui/material";
+import { Button, Card, CardActions, CardContent, CardMedia, Chip, Modal, Stack, Tooltip, Typography, Box, useMediaQuery, useTheme } from "@mui/material";
 import './ProjectCard.css';
-import { School, Terminal, Work, WorkspacePremium } from "@mui/icons-material";
+import { School, Terminal, Work } from "@mui/icons-material";
 
 import defaultImage from "../../assets/defaultImage.jpg";
 
@@ -13,6 +13,8 @@ const iconMap = {
 
 export const ProjectCard = ({ image, title, description, languages, projectType, tooltipContent, buttonLink }) => {
     const [open, setOpen] = useState(false);
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -38,9 +40,25 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
         );
     };
 
+    const modalStyle = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: isMobile ? '85%' : 400,
+        maxHeight: isMobile ? '80vh' : '90vh',
+        bgcolor: 'background.paper',
+        boxShadow: 24,
+        p: isMobile ? 2 : 4,
+        borderRadius: '8px',
+        overflow: 'auto',
+        '&:focus': {
+            outline: 'none'
+        }
+    };
+
     return (
         <div data-aos="fade-down">
-            {/* Carte cliquable */}
             <div className="projectCard" onClick={handleOpen}>
                 <Card sx={{ maxWidth: 345, position: 'relative', cursor: 'pointer' }}>
                     <div className="cornerIcon">
@@ -66,8 +84,8 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                         </div>
                     </CardContent>
                     <CardActions sx={{ justifyContent: "flex-end",
-                                        backgroundColor: "#F5EFE7"
-                                    }}>
+                        backgroundColor: "#F5EFE7"
+                    }}>
                         <Button variant="outlined">
                             Détails
                         </Button>
@@ -75,22 +93,19 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                 </Card>
             </div>
 
-            {/* Modal */}
-            <Modal open={open} onClose={handleClose} aria-labelledby="modal-title" aria-describedby="modal-description">
-                <Box
-                    sx={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        width: 400,
-                        bgcolor: 'background.paper',
-                        boxShadow: 24,
-                        p: 4,
-                        borderRadius: '8px'
-                    }}
-                >
-                    <Typography id="modal-title" variant="h5" component="h2" gutterBottom>
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+                <Box sx={modalStyle}>
+                    <Typography
+                        id="modal-title"
+                        variant={isMobile ? "h6" : "h5"}
+                        component="h2"
+                        gutterBottom
+                    >
                         {title}
                     </Typography>
                     <Typography id="modal-description" variant="body1" sx={{ mb: 2 }}>
@@ -100,7 +115,10 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                         Informations supplémentaires
                     </Typography>
                     <Typography variant="body2" sx={{ mb: 2 }}>
-                        <ul>
+                        <ul style={{
+                            paddingLeft: isMobile ? '1.2rem' : '2rem',
+                            margin: isMobile ? '0.5rem 0' : '1rem 0'
+                        }}>
                             {tooltipContent.map((item, index) => (
                                 <li key={index}>{item}</li>
                             ))}
@@ -109,7 +127,13 @@ export const ProjectCard = ({ image, title, description, languages, projectType,
                     <Typography variant="subtitle1" sx={{ fontWeight: 'bold', mb: 1 }}>
                         Technologies Used:
                     </Typography>
-                    <Stack direction="row" spacing={1} sx={{ mb: 2 }}>
+                    <Stack
+                        direction="row"
+                        spacing={1}
+                        sx={{ mb: 2 }}
+                        flexWrap="wrap"
+                        gap={1}
+                    >
                         {languages.map((language, index) => (
                             <Chip key={index} label={language} size="small" />
                         ))}
